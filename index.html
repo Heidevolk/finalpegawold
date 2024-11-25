@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Pegawold</title>
   <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
   <link rel="stylesheet" href="styles/styles.css">
@@ -144,19 +145,19 @@
        
     
 <div class="step-guide">
-  <h2>MUY SENCILLO DE USAR</h2>
+  <h2>MUY SENCILLO DE USAR EN 3 PASOS</h2>
   <div class="steps">
       <div class="step">
           <img src="imagenes pegwold wix/masajeycorte.jpg" alt="Paso 1">
-          <p>Masajee y Corte</p>
+          <p style="font-size: 180%; font-weight: bold;">1. Masajee y Corte</p>
       </div>
       <div class="step">
           <img src="imagenes pegwold wix/aplique.jpg" alt="Paso 2">
-          <p>Aplique</p>
+          <p style="font-size: 180%; font-weight: bold;">2. Aplique</p>
       </div>
       <div class="step">
           <img src="imagenes pegwold wix/instale.jpg" alt="Paso 3">
-          <p>Instale</p>
+          <p style="font-size: 180%; font-weight: bold;">3. Instale</p>
       </div>
   </div>
 </div>
@@ -181,10 +182,7 @@
             </form>
         </div>
         <div class="navigation-links">
-            <a href="nosotros.html">Nosotros</a>
-            <a href="index.html">Productos</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="https://beacons.ai/pegawold">Contacto</a>
+          <a href="index.html"></a>
         </div>
         <div class="buttons">
           <button onclick="openWhatsApp()" class="whatsapp-button">
@@ -203,25 +201,19 @@
 
 </body>
 <script>
-  document.getElementById("menu-icon").addEventListener("click", function () {
-      var navbar = document.getElementById("navbar");
-      navbar.classList.toggle("show"); // Muestra o esconde el menú
-      const menuIcon = document.querySelector('.menu-icon');
-const navMenu = document.querySelector('ul');
-
-menuIcon.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
+document.getElementById("menu-icon").addEventListener("click", function () {
+  var navbar = document.getElementById("navbar");
+  navbar.classList.toggle("show"); // Muestra u oculta el menú
 });
 
-  });
+function openWhatsApp() {
+  const phoneNumber = "+573006562573"; // Reemplaza con tu número
+  const message = "Hola, me gustaría obtener más información.";
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.location.href = url;
+}
 
 
-  function openWhatsApp() {
-    const phoneNumber = "+573006562573"; // Reemplaza con tu número
-    const message = "Hola, me gustaría obtener más información.";
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.location.href = url;
-  }
 </script>
 
 
